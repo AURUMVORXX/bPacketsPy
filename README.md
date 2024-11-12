@@ -16,7 +16,7 @@ It's important to use same names for class names derived from BPacketMessage and
 1. Download this repo
 2. Import `meta.xml` from `bpackets_sq` to the client-side (and also to the server-side, if you want to)
 3. Put `bpacket` folder into your `lib/` folder in the server root directory
-4. Import `bpacket` into your's Python scripts
+4. Import `bpacket` into your Python scripts
 ## Usage example
 ### Python (server-side):
 ```python
