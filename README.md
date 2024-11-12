@@ -5,6 +5,7 @@ This is implementation of [bPackets](https://gitlab.com/bcore1/bpackets) module 
 ## Comapring to original bPackets
 1. Removed type BPacketObject due to the inabillity to transfer its scheme
 2. BPacketArray and BPacketTable is now the same thing as BPacketAny (no need to specify them, unless you want to)
+3. Removed 'optional' flag
 
 Python specific changes:
 1. You don't need to specify BPacketAny type, it's default for any supported type of data, but specifying it lead to less packet size (except for BPacketArray and BPacketTable)
