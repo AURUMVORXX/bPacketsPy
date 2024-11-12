@@ -64,6 +64,12 @@ class PlayerMessage extends BPacketMessage
 	pattrs = -1
 }
 
+class ClientMessage extends BPacketMessage
+{
+	</ type = BPacketAny />
+	text = -1
+}
+
 PlayerMessage.bind(function(message){
 	print("Got player info from server:");
 	print("Player name: " + message.name);
