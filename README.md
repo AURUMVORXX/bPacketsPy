@@ -37,7 +37,7 @@ class PlayerMessage(bp.BPacketMessage):
 @g2o.event('onPlayerJoin')
 def evtJoin(**kwargs):
 	playerid = kwargs['playerid']
-	msg = PlayerMessage(name = g2o.getPlayerName(pid), pid = playerid, pattrs = {'hp': 40, 'str': 500})
+	msg = PlayerMessage(name = g2o.getPlayerName(playerid), pid = playerid, pattrs = {'hp': 40, 'str': 500})
 	msg.serialize().send(pid, RELIABLE)
 
 class ClientMessage(bp.BPacketMessage):
